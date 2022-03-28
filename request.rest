@@ -1,2 +1,22 @@
 ###
 GET http://localhost:5000/
+
+###
+POST   http://localhost:5000/createUser
+content-type: application/json
+
+{
+    "name": "sample admin",
+    "password": "123456",
+    "mobileNo": "9876543210",
+    "role": "admin"
+} 
+
+###
+POST   http://localhost:5000/login
+content-type: application/json
+
+{
+    "mobileNo": "987654321",
+    "password": "123456"
+} 
