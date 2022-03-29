@@ -21,7 +21,7 @@ async function run() {
         console.log('db connected')
         const database = client.db('oyelabs_assignment');
         const users = database.collection('users');
-        const customers = database.collection('customers');
+        // const customers = database.collection('customers');
 
         // API: login with mobile number and password 
         app.post('/login', async (req, res) => {
