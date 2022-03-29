@@ -93,7 +93,7 @@ run().catch(console.dir);
 
 app.get('/', (req, res) => {
     console.log('Server running ok...');
-    res.send('Server running ok...');
+    res.send('Mobile login and add customer API Server running ok...');
 })
 
 
