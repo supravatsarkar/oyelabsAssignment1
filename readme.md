@@ -1,7 +1,7 @@
 ## Phone number Login and customer add API
 - Default Admin mobileNo: 9851650495, password: 123456
 ### Endpoints
-* POST   http://localhost:5000/login
+* POST   /login
 content-type: application/json
 
 {
@@ -9,8 +9,9 @@ content-type: application/json
     "password": "123456"
 } 
 
-###
-POST   http://localhost:5000/addCustomer?userMobileNo=9851650495
+
+* POST   /addCustomer?userMobileNo=9851650495
+
 content-type: application/json
 
 {
@@ -22,4 +23,4 @@ content-type: application/json
 } 
 
 ###
-GET   http://localhost:5000/customers
+* GET   /customers
