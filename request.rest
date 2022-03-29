@@ -6,9 +6,9 @@ POST   http://localhost:5000/createUser
 content-type: application/json
 
 {
-    "name": "sample admin",
+    "name": "Supravat Sarkar",
     "password": "123456",
-    "mobileNo": "9876543210",
+    "mobileNo": "9851650495",
     "role": "admin"
 } 
 
@@ -17,6 +17,21 @@ POST   http://localhost:5000/login
 content-type: application/json
 
 {
-    "mobileNo": "987654321",
-    "password": "123456"
+    "mobileNo": "9999933335",
+    "password": "123455"
 } 
+
+###
+POST   http://localhost:5000/addCustomer?userMobileNo=9851650495
+content-type: application/json
+
+{
+    "name": "sample customar3",
+    "password": "123455",
+    "mobileNo": "9999933335",
+    "email":"customer3@gmail.com",
+    "address":"Bardhaman, West Bengal, India"
+} 
+
+###
+GET   http://localhost:5000/customers
